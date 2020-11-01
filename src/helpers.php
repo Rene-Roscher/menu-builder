@@ -13,7 +13,6 @@ if (! function_exists('menuBuilder')) {
             return request()->routeIs("$uri[0].$uri[1]") ? 'active' : null;
         if (count($uri) == 0)
             return request()->routeIs("$uri*") ? 'active' : null;
-        throw new LogicException('No Route-Named Schema found.');
     }
 }
 
@@ -28,9 +27,6 @@ if (! function_exists('menuBuilder')) {
 }
 
 if (! function_exists('user')) {
-    /**
-     * @return \ReneRoscher\MenuBuilder\MenuBuilder
-     */
     function user()
     {
         return auth()->user();

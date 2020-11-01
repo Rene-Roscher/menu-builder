@@ -38,7 +38,7 @@ class MenuDropdown extends MenuElement
             $rendered .= $element->render();
         $display = $this->display;
         $icon = $this->icon;
-        return view('menu-builder.ul', compact('rendered', 'display', 'icon'))->render();
+        return view('menu-builder::ul', compact('rendered', 'display', 'icon'))->render();
     }
 
     /**

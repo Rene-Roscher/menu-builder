@@ -25,7 +25,7 @@ class MenuElement
 
     public function render()
     {
-        return view('menu-builder.li', ['display' => $this->display, 'href' => $this->href, 'icon' => $this->icon])->render();
+        return view('menu-builder::li', ['display' => $this->display, 'href' => $this->href, 'icon' => $this->icon])->render();
     }
 
     /**
