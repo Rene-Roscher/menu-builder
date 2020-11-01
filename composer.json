@@ -1,0 +1,58 @@
+{
+    "name": "rene-roscher/menu-builder",
+    "description": "A full featured menu-builder with the integration of the spatie permission package",
+    "keywords": [
+        "rene-roscher",
+        "menu-builder"
+    ],
+    "homepage": "https://github.com/rene-roscher/menu-builder",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "René Roscher",
+            "email": "roscher794@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0",
+        "spatie/laravel-permission": "^3.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReneRoscher\\MenuBuilder\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ReneRoscher\\MenuBuilder\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ReneRoscher\\MenuBuilder\\MenuBuilderServiceProvider"
+            ],
+            "aliases": {
+                "MenuBuilder": "ReneRoscher\\MenuBuilder\\MenuBuilderFacade"
+            }
+        }
+    }
+}
