@@ -36,7 +36,7 @@ class MenuBuilder extends MenuDropdown
             }
             $rendered .= $element->render();
         }
-        return view('menu-builder.sidebar.sidebar', compact('rendered'))->render();
+        return view('menu-builder.sidebar', compact('rendered'))->render();
     }
 
     /**
