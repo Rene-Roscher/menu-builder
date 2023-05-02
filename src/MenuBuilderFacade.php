@@ -5,7 +5,16 @@ namespace ReneRoscher\MenuBuilder;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \ReneRoscher\MenuBuilder\Skeleton\SkeletonClass
+ * Class MenuBuilderFacade
+ * @package App\Providers\Facades
+ * @method static MenuBuilder add(MenuElement $element)
+ * @method static MenuElement element($display, $href, $icon = '', $permission = null)
+ * @method static MenuElement model($model, $icon = '', $permission = null)
+ * @method static MenuDropdown dropdown($display, $icon, $permission = null)
+ * @method static MenuElement get($key)
+ * @method static set($key, $value)
+ * @method static MenuElement getElements()
+ * @method static render()
  */
 class MenuBuilderFacade extends Facade
 {
