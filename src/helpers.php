@@ -25,10 +25,10 @@ if (! function_exists('menuBuilder')) {
         return \ReneRoscher\MenuBuilder\MenuBuilderFacade::getFacadeRoot();
     }
 }
-
+/*
 if (! function_exists('user')) {
     function user()
     {
         return auth()->user();
     }
-}
+}*/
