@@ -16,9 +16,9 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "*",
         "illuminate/support": "*",
-        "spatie/laravel-permission": "^3.16"
+        "spatie/laravel-permission": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0"
